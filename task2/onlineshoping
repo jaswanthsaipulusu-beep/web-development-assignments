@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Shopping</title>
+<style>
+body{
+    font-family:Arial;
+    margin:0;
+    background:#f1f5f9
+}
+header{
+    background:#ea580c;
+    color:white;
+    padding:20px;
+    text-align:center
+}
+nav{
+    background:#9a3412;
+    padding:12px;
+    text-align:center
+}
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none
+}
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    padding:25px
+}
+.product{
+    background:white;
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px #ccc
+}
+.image{
+    font-size:65px;
+    background:#ffedd5;
+    padding:20px;
+    border-radius:8px
+}
+.price{color:#ea580c;font-size:20px;font-weight:bold}
+button{background:#ea580c;color:white;border:0;padding:10px 18px;border-radius:5px;cursor:pointer}
+</style>
+</head>
+<body>
+<header><h1>ShopEasy</h1><p>Best Products at Best Prices</p></header>
+<nav><a href="#products">Products</a><a href="#offers">Offers</a></nav>
+<h2 id="offers" style="text-align:center">Special Offers - Up to 30% Off!</h2>
+<div class="products" id="products">
+<div class="product">
+<div class="image">📱</div><h3>Smartphone</h3>
+<p>Discount: 20%</p><p class="price">₹12,999</p>
+<button onclick="alert('Smartphone added to cart!')">Add to Cart</button>
+</div>
+<div class="product">
+<div class="image">💻</div><h3>Laptop</h3>
+<p>Discount: 15%</p><p class="price">₹45,999</p>
+<button onclick="alert('Laptop added to cart!')">Add to Cart</button>
+</div>
+<div class="product">
+<div class="image">🎧</div><h3>Headphones</h3>
+<p>Discount: 30%</p><p class="price">₹1,499</p>
+<button onclick="alert('Headphones added to cart!')">Add to Cart</button>
+</div>
+</div>
+</body>
+</html>
 
